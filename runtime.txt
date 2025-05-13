@@ -1,0 +1,25 @@
+Runtime Analysis
+
+1. **Boid Initialization**
+   - **Complexity**: O(n)
+   - **Description**: Initializes each boid with random position and velocity.
+
+2. **Grid Update**
+   - **Complexity**: O(n)
+   - **Description**: Updates the spatial grid with current boid positions.
+
+3. **Force Calculation**
+   - **Complexity**: O(n * m)
+   - **Description**: Calculates forces for each boid based on neighbors, where m is the average number of neighbors.
+
+4. **Boid Update**
+   - **Complexity**: O(n)
+   - **Description**: Updates position and velocity of each boid based on calculated forces.
+
+5. **Rendering**
+   - **Complexity**: O(n)
+   - **Description**: Draws each active boid in the simulation.
+
+## Notes
+- **n**: Number of boids in the simulation.
+- The use of OpenMP parallelizes many operations, effectively reducing the time for these computations. 
